@@ -36,7 +36,7 @@ export default function Todo(props){
     }
     return (
         
-            <div className="Todo  group relative hover:backdrop-contrast-75 transition-all duration-500 flex justify-between items-center w-4/5 max-w-lg mx-auto rounded-full shadow-lg my-5 px-5 py-2 ">
+            <div className="Todo  bg-white group relative hover:shadow-2xl transition-all duration-500 flex justify-between items-center w-4/5 max-w-lg mx-auto rounded-full shadow-lg my-5 px-5 py-2 ">
                 <p className={pClass}>{props.todo.body}</p>
                 <div className={svgBoxClass} onClick={updateTodo}>
                     <svg  className="w-full fill-white" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">

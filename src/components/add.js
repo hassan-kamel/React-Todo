@@ -3,8 +3,6 @@ import useToggleState from "../hooks/useToggleState";
 import Data from "../service";
 export default function Add({changing}){
     const [clicked,toggleClick] = useToggleState(false);
-    // const [added,setAdd] = useToggleState(0);
-
 
     useEffect(()=>{
         document.querySelector('.form').classList.toggle('scale-0');
@@ -31,10 +29,10 @@ export default function Add({changing}){
                 </div>
         </div>
             {/* **************************** */}
-        <div className="form fixed origin-center scale-0 transition-all duration-500 flex justify-center items-center h-[100vh] w-[100vw]  inset-0 z-10 bg-gamma ">
-            <div className="add-todo scale-0 duration-300 delay-500 relative p-5 rounded-xl bg-charlie flex flex-col justify-center items-center gap-8">
+        <div className="form fixed origin-center scale-0 transition-all duration-500 flex justify-center items-center h-[100vh] w-[100vw]  inset-0 z-10  ">
+            <div className="add-todo scale-0 duration-300  relative p-5 rounded-xl bg-charlie flex flex-col justify-center items-center gap-8 max-w-[80%]">
                 <label className="text-3xl capitalize font-bold ">add todo</label>
-                <input className="px-8 py-2 rounded-xl text-2xl outline-none"  type="text" placeholder="ex:learn nextjs" onChange={(e)=>{inputVal=e.target.value}}/>
+                <input className="max-w-[95%] px-4 py-2 rounded-xl text-2xl outline-none"  type="text" placeholder="ex:learn nextjs" onChange={(e)=>{inputVal=e.target.value}}/>
                 <button className="shadow-xl rounded-xl px-8 py-2 bg-bravo capitalize cursor-pointer hover:brightness-150 text-white" type="submit" onClick={addTodo}>add</button>
                 <div className="flex justify-center items-center w-10 h-10 rounded-full bg-alpha absolute -top-3 -left-3 cursor-pointer hover:brightness-150" onClick={toggleClick}>
                     <svg className="w-3/4" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
