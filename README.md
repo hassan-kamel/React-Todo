@@ -6,4 +6,4 @@ I have done a lot of apps in __*Vanillajs*__ and pure *css/scss* so i decided to
  > Reactjs ![react](react.svg) <br>
  > Tailwindcss  ![tailwindcss](tailwind.svg)
 
- ### You can give it a look from [here]((https://taskaat.netlify.app)
+ ### You can give it a look from [here](https://taskaat.netlify.app)
